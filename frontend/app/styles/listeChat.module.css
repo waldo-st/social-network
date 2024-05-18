@@ -1,0 +1,22 @@
+.suggest{
+    display: flex;
+    align-items: center;
+    margin: 7px 0 7px 20px;
+    gap: 5px;
+}
+.infoSuggest{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 500;
+    font-size: 15px;
+}
+.infoSuggest img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.iconAdd{
+    font-size: 16px;
+    cursor: pointer;
+}

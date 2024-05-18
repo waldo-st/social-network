@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS selected_user (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    postId INTEGER REFERENCES post(id),
+    followerId INTEGER REFERENCES follower(id)
+)

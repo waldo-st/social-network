@@ -1,0 +1,1 @@
+ALTER TABLE event_reaction ADD COLUMN status TEXT CHECK(status='going' OR status='not going');

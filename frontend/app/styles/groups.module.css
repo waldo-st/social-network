@@ -1,0 +1,43 @@
+.groupChoised{
+    width: 212px;
+    height: 100%;
+}
+
+.AllWidth{
+    width: 100%;
+}
+.choiseGroup{
+    width: 100%;
+    height: 50px;
+}
+
+.active{
+    background-color: white;
+    color: blue;
+    border-color: blue;
+    border: solid 1px;
+}
+
+.WBarForActionGroupe{
+    width: 50%;
+}
+.icon{
+    width: 25px;
+    height: 25px;
+}
+
+.receiverMsg{
+    min-height: 50px;
+    padding-left:5px ;
+    display: flex;
+    flex-direction: row;
+    background: greenyellow;
+    gap: 5px;
+    align-items: center;
+}
+@media (min-width: 700px) {
+    .groupChoised{
+        width: 250px;
+        height: 100%;
+    }
+}

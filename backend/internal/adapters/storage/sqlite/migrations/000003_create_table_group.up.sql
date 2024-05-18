@@ -1,0 +1,7 @@
+CREATE table IF NOT EXISTS "group" (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    creatorId INTEGER REFERENCES user(id),
+    title TEXT,
+    description TEXT,
+    createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+)

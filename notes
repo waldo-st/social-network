@@ -1,0 +1,35 @@
+SELECT DISTINCT 
+    u.id,
+    u.email,
+    u.firstname,
+    u.lastname,
+    u.dateofBirth,
+    u.avatar,
+    u.nickname,
+    u.about,
+    u.isPublic,
+CASE 
+    WHEN n.status = 'pending' THEN 'pending' 
+    WHEN f."followerId" = ? AND f."followeeId" = u.id THEN 'true' 
+    ELSE 'false'
+END AS connection
+FROM user u
+LEFT JOIN notification n ON u.id = n.receiver AND n.sender = ? AND n.type = 'follow' 
+LEFT JOIN follower f ON f.followeeId = u.id AND f.followerId = ?
+WHERE u.id != ? ORDER BY u.id
+
+
+
+
+
+
+SELECT DISTINCT u.id, u.email, u.firstname, u.lastname, u.dateofBirth, u.avatar, u.nickname, u.about, u.isPublic,
+		CASE 
+			WHEN n."type" IS NULL THEN 'no'
+			WHEN n.status = 'pending' THEN 'pending'
+			WHEN n.status = 'rejected' THEN 'rejected'
+			WHEN n.status = 'accepted' THEN 'true'
+		END AS connection
+		FROM user u
+		LEFT JOIN notification n ON u.id = n.receiver AND n.sender = ? AND n.type = 'follow'
+		WHERE u.id != ?  

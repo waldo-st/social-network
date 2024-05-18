@@ -1,0 +1,29 @@
+.right{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 250px;
+    height: 100vh;
+}
+.infoEvent{
+    height: 180px;
+    background-color: #FFFFFF;
+}
+.title{
+    display: block;
+    font-weight: 600;
+    font-size: 15px;
+    margin: 10px;
+}
+.listEvents{
+    
+}
+
+.message{
+    height: 390px;
+    background-color: #FFFFFF;
+}
+.listeChats{
+    height: 340px;overflow-y: auto;
+    scrollbar-width: thin;
+}

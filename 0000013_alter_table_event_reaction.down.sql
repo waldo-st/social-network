@@ -1,0 +1,1 @@
+ALTER TABLE event_reaction DROP COLUMN status TEXT CHECK(status='going' 0R status='not going');

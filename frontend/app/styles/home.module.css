@@ -1,0 +1,14 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.middle{
+    width: 600px;
+    height: 100vh;
+}

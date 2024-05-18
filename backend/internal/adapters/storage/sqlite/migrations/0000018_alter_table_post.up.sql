@@ -1,0 +1,1 @@
+ALTER TABLE notification ADD COLUMN groupId INTEGER DEFAULT 0;

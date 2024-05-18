@@ -1,0 +1,43 @@
+.event{
+    display: flex;
+    margin: 0 0 7px 20px;
+    align-items: center;
+    gap: 5px;
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    font-weight: 600;
+    color: black;
+}
+.hours, .by{
+    font-size: 10px;
+    font-weight: 600;
+}
+.span1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+    font-weight: 600;
+    padding-bottom: 3px;
+    color: #FFFFFF;
+    width: 40px;
+    height: 45px;
+    border-radius: 15px;
+    background-color: #5f4fe1;
+}
+.span2{
+    display: block;
+    background-color: #FFFFFF;
+    color: red;
+    font-size: 15px;
+    font-weight: 600;
+    width: 100%;
+    height: 25px;
+    border-radius: 15px;
+    border: 1px solid #5f4fe1;
+    text-align: center;
+}

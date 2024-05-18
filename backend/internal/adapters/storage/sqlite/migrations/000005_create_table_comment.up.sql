@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS comment (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    userId INTERGER REFERENCES user(id),
+    postId INTEGER REFERENCES user(id),
+    content TEXT,
+    image TEXT,
+    createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+)
